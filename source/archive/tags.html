@@ -1,0 +1,13 @@
+---
+layout: default
+title: Tags
+use:
+    - posts_tags
+---
+<h1>Tags</h1>
+<br/>
+<div class="spaced">
+  {% for tag,posts in data.posts_tags %}
+    <a class="postits" href="{{ site.url }}/archive/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>
+  {% endfor %}
+</div>

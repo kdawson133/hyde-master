@@ -1,0 +1,25 @@
+{% include 'search-head.twig.html' %}
+
+	<body>
+
+    {% include 'sidebar.twig.html' %}
+
+    <div class="content container">
+      <h1 class="post-title"> Search </h1>
+			<input type="text" id="tipue_drop_input" autocomplete="on">
+			<div id="tipue_drop_content"></div>
+
+    </div><!-- end class content container -->
+
+    <script>
+    $(document).ready(function() {
+        $('#tipue_drop_input').tipuedrop({
+            'mode': 'json',
+						'show': 5,
+            'contentLocation': '/search.json'
+         });
+    });
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<div class="sidebar">
+	<div class="container sidebar-sticky">
+		<div class="sidebar-about">
+		    <center><img src="/assets/icons/logo-128.png"></center>
+			<h1>
+				<a href="{{ site.baseurl }}/">{{ site.title }}</a>
+			</h1>
+			<p class="lead">{{ site.subtitle }}</p>
+				<p>
+					Subscribe: <a href="https://twitter.com/iznewstoday" 
+					target="_blank">@iznewstoday</a> | 
+				    <a href="/feed.xml" target="_blank">RSS</a>
+				</p>
+		</div><!-- end class sidebar-about -->
+
+		<nav class="sidebar-nav">
+			<a class="sidebar-nav-item" href="{{ site.url }}/">Home</a>
+			<a class="sidebar-nav-item" href="{{ site.url }}/search">Search</a>
+			<a class="sidebar-nav-item" href="{{ site.url }}/archive">Posts Archive</a>
+			<a class="sidebar-nav-item" href="{{ site.url }}/archive/categories">Categories</a>
+			<a class="sidebar-nav-item" href="{{ site.url }}/archive/tags">Tags</a>
+			<a class="sidebar-nav-item" href="{{ site.url }}/about">About</a>
+		</nav>
+
+		<p>&copy; {{ "now"|date("Y") }} All Rights Reserved.</p>
+	</div><!-- end class container sidebar-sticky -->
+</div><!-- end class sidebar -->

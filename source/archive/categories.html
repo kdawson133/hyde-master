@@ -1,0 +1,15 @@
+---
+layout: default
+title: Categories
+use:
+    - posts_categories
+---
+<h1>Categories</h1>
+
+<div>
+
+    {% for category,posts in data.posts_categories %}
+      <h2><a href="{{ site.url }}/archive/categories/{{ category|url_encode(true) }}">{{ category|title }}</a></h2>
+    {% endfor %}
+
+</div>

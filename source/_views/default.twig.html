@@ -1,0 +1,14 @@
+{% include 'head.twig.html' %}
+
+	<body>
+
+    {% include 'sidebar.twig.html' %}
+
+    <div class="content container">
+
+      {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
+
+    </div><!-- end class content container -->
+
+  </body>
+</html>
