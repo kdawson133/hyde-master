@@ -84,10 +84,11 @@ Hyde's page orientation can be reversed with a single class.
 
 ## Author
 
-**Mark Otto**
+**Kirk Dawson**
 - <https://github.com/kdawson133>
 - <https://twitter.com/kirk133>
 
+Based on The Hyde Theme for Jekyll by [@mdo](https://twitter.com/mdo)
 
 ## License
 
