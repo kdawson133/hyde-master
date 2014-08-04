@@ -6,20 +6,20 @@
 
     <div class="content container">
       <h1 class="post-title"> Search </h1>
-			<input type="text" id="tipue_drop_input" autocomplete="on">
-			<div id="tipue_drop_content"></div>
+			<form action="/search">
+        <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+      </form>
+			<div id="tipue_search_content"></div>
 
     </div><!-- end class content container -->
 
     <script>
-    $(document).ready(function() {
-        $('#tipue_drop_input').tipuedrop({
-            'mode': 'json',
-						'show': 5,
-            'contentLocation': '/search.json'
-         });
-    });
+      $(document).ready(function() {
+        $('#tipue_search_input').tipuesearch({
+          'mode': 'json',
+          'contentLocation': '/search.json'
+        });
+      });
     </script>
-
   </body>
 </html>
