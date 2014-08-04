@@ -20,7 +20,7 @@ Hyde is a two-column [Sculpin](https://sculpin.io) theme that pairs a prominent 
 
 ## Usage
 
-Hyde is a theme built on top of [sculpin](https://sculpin.io), which provides a fully furnished sculpin setup—just download and start the sculpin server. See [Sculpin getting started guide](https://sculpin.io/getstarted/) for how to install and use Sculpin.
+Hyde is a theme built on top of [sculpin](https://sculpin.io), which provides a fully furnished Sculpin setup—just download and start the sculpin server. See the [Sculpin getting started guide](https://sculpin.io/getstarted/) for how to install and use Sculpin.
 
 
 ## Options
