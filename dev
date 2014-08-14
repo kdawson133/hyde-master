@@ -1,0 +1,3 @@
+#!/bin/bash
+echo Starting Development Environment
+sculpin generate --watch --server
