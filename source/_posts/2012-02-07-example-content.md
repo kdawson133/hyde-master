@@ -1,6 +1,8 @@
 ---
-layout: post
 title: Example content
+tags: [example, content]
+categories: [Jekyll]
+description: This is an example blog post that shows several types of HTML content supported in this theme.
 ---
 
 
