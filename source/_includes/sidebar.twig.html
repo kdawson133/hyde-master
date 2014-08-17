@@ -20,12 +20,6 @@
 			<a class="sidebar-nav-item" href="{{ site.url }}/">Home</a>
 			{% endif %}
 
-			{% if page.title is same as('Search') %}
-			<a class="sidebar-nav-item active" href="{{ site.url }}/search">Search</a>
-			{% else %}
-			<a class="sidebar-nav-item" href="{{ site.url }}/search">Search</a>
-			{% endif %}
-
 			{% if page.title is same as('Archive') %}
 			<a class="sidebar-nav-item active" href="{{ site.url }}/archive">Posts Archive</a>
 			{% else %}
@@ -56,6 +50,19 @@
 			<a class="sidebar-nav-item" href="{{ site.url }}/credits">Credits</a>
 			{% endif %}
 		</nav>
+
+		<form action="/search">
+			<input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+		</form>
+
+		<script>
+			$(document).ready(function() {
+				$('#tipue_search_input').tipuesearch({
+					'mode': 'json',
+					'contentLocation': '/search.json'
+				});
+			});
+		</script>
 
 		<p>&copy; {{ "now"|date("Y") }} All Rights Reserved.</p>
 	</div><!-- end class container sidebar-sticky -->
