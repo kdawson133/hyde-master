@@ -14,13 +14,47 @@
 		</div><!-- end class sidebar-about -->
 
 		<nav class="sidebar-nav">
+			{% if page.title is same as('Home') %}
+			<a class="sidebar-nav-item active" href="{{ site.url }}/">Home</a>
+			{% else %}
 			<a class="sidebar-nav-item" href="{{ site.url }}/">Home</a>
+			{% endif %}
+
+			{% if page.title is same as('Search') %}
+			<a class="sidebar-nav-item active" href="{{ site.url }}/search">Search</a>
+			{% else %}
 			<a class="sidebar-nav-item" href="{{ site.url }}/search">Search</a>
+			{% endif %}
+
+			{% if page.title is same as('Archive') %}
+			<a class="sidebar-nav-item active" href="{{ site.url }}/archive">Posts Archive</a>
+			{% else %}
 			<a class="sidebar-nav-item" href="{{ site.url }}/archive">Posts Archive</a>
+			{% endif %}
+
+			{% if page.title is same as('Categories') %}
+			<a class="sidebar-nav-item active" href="{{ site.url }}/archive/categories">Categories</a>
+			{% else %}
 			<a class="sidebar-nav-item" href="{{ site.url }}/archive/categories">Categories</a>
+			{% endif %}
+
+			{% if page.title is same as('Tags') %}
+			<a class="sidebar-nav-item active" href="{{ site.url }}/archive/tags">Tags</a>
+			{% else %}
 			<a class="sidebar-nav-item" href="{{ site.url }}/archive/tags">Tags</a>
+			{% endif %}
+
+			{% if page.title is same as('About') %}
+			<a class="sidebar-nav-item active" href="{{ site.url }}/about">About</a>
+			{% else %}
 			<a class="sidebar-nav-item" href="{{ site.url }}/about">About</a>
+			{% endif %}
+
+			{% if page.title is same as('Credits') %}
+			<a class="sidebar-nav-item active" href="{{ site.url }}/credits">Credits</a>
+			{% else %}
 			<a class="sidebar-nav-item" href="{{ site.url }}/credits">Credits</a>
+			{% endif %}
 		</nav>
 
 		<p>&copy; {{ "now"|date("Y") }} All Rights Reserved.</p>
